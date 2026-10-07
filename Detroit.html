@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detroit: Become Human | التفاصيل | PS World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+```
+<header>
+    <div class="logo">PS World</div>
+    <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="all-games.html">المكتبة</a>
+            <a href="index.html#contact">تواصل</a>
+        </nav>
+</header>
+
+<div class="container">
+
+    <img src="C:\Users\abrar\OneDrive\الصور\Screenshots\لقطة شاشة 2026-10-03 211711.png"
+         class="game-banner"
+         alt="Detroit: Become Human">
+
+    <div class="details-content">
+
+        <h1 class="game-details-title">Detroit: Become Human</h1>
+
+        <div class="rating">
+            ★ ★ ★ ★ ★ <span>(4.73 / 5 بناءً على أكثر من 177 ألف تقييم)</span>
+        </div>
+
+        <div class="description-container">
+
+            <h2>نظرة عامة:</h2>
+
+            <p class="description">
+                تدور أحداث اللعبة في مدينة ديترويت عام 2038، حيث أصبح البشر يعتمدون على androids شبيهة بالبشر للعمل في مختلف المجالات. لكن بعض هذه الآلات تبدأ في التصرف بشكل غير معتاد وكأنها تمتلك مشاعر ووعيًا خاصًا بها. تلعب بثلاث شخصيات رئيسية، وتعيش قصصهم وقراراتهم المختلفة، حيث يمكن لكل اختيار أن يغير مجرى الأحداث ومصير الشخصيات، بل وقد يؤثر في مستقبل المدينة بأكملها.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="comments-section">
+
+        <h3>آراء ومراجعات اللاعبين</h3>
+
+        <div class="comment-input-box">
+
+            <input
+                type="text"
+                id="commentInput"
+                placeholder="شاركنا رأيك أو مراجعتك للعبة..."
+            >
+
+            <button onclick="addComment()">نشر</button>
+
+        </div>
+
+        <div class="comments-list" id="commentsList">
+
+            <div class="comment">
+                <strong>عبدالله خالد</strong>
+                القصة والقرارات تخليك تحس فعلًا إن كل اختيار تسويه له نتيجة.
+            </div>
+
+            <div class="comment">
+                <strong>نورة محمد</strong>
+                من أكثر الألعاب اللي خلتني أتعلق بالشخصيات وأفكر في قراراتي قبل أختار.
+            </div>
+
+            <div class="comment">
+                <strong>سلمان أحمد</strong>
+                الجرافيكس والتفاصيل ممتازة، وأكثر شيء عجبني اختلاف الأحداث حسب اختيارات اللاعب.
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function addComment() {
+
+        const input = document.getElementById('commentInput');
+        const list = document.getElementById('commentsList');
+
+        if (input.value.trim() !== "") {
+
+            const newComment = document.createElement('div');
+
+            newComment.className = 'comment';
+
+            newComment.innerHTML =
+                `<strong>لاعب جديد</strong>${input.value}`;
+
+            list.appendChild(newComment);
+
+            input.value = "";
+        }
+    }
+</script>
+```
+
+</body>
+</html>

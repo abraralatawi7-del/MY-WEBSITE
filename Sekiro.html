@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekiro: Shadows Die Twice | التفاصيل | PS World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+```
+<header>
+    <div class="logo">PS World</div>
+    <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="all-games.html">المكتبة</a>
+            <a href="index.html#contact">تواصل</a>
+        </nav>
+</header>
+
+<div class="container">
+
+    <img src="C:\Users\abrar\OneDrive\الصور\Screenshots\لقطة شاشة 2026-10-03 214929.png"
+         class="game-banner"
+         alt="Sekiro: Shadows Die Twice">
+
+    <div class="details-content">
+
+        <h1 class="game-details-title">Sekiro: Shadows Die Twice</h1>
+
+        <div class="rating">
+            ★ ★ ★ ★ ★ <span>(4.66 / 5 بناءً على 66,194 تقييمًا)</span>
+        </div>
+
+        <div class="description-container">
+
+            <h2>نظرة عامة:</h2>
+
+            <p class="description">
+                تدور أحداث اللعبة في اليابان خلال حقبة سينغوكو في القرن السادس عشر، حيث تلعب دور "الذئب ذو الذراع الواحدة"، وهو محارب شينوبي أُعيد من حافة الموت بعد هزيمته. تتمثل مهمتك في إنقاذ سيدك الشاب واستعادة شرفك والانتقام من أعدائك. استكشف عالمًا مترابطًا مليئًا بالمخاطر، وخض معارك بالسيف ومواجهات شرسة، واستخدم ذراعك الاصطناعية ومهارات النينجا والتخفي وخطاف التنقل للتغلب على أعدائك.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="comments-section">
+
+        <h3>آراء ومراجعات اللاعبين</h3>
+
+        <div class="comment-input-box">
+
+            <input
+                type="text"
+                id="commentInput"
+                placeholder="شاركنا رأيك أو مراجعتك للعبة..."
+            >
+
+            <button onclick="addComment()">نشر</button>
+
+        </div>
+
+        <div class="comments-list" id="commentsList">
+
+            <div class="comment">
+                <strong>عبدالله خالد</strong>
+                القتال بالسيف ممتع جدًا، وكل مواجهة تحسها تحتاج تركيز وتوقيت.
+            </div>
+
+            <div class="comment">
+                <strong>نورة محمد</strong>
+                أجواء اليابان وتصميم العالم رهيبين، وكل منطقة فيها تفاصيل جميلة.
+            </div>
+
+            <div class="comment">
+                <strong>سلمان أحمد</strong>
+                من أكثر الألعاب اللي خلتني أتعلم من أخطائي، والقتالات مع الزعماء حماسية جدًا.
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function addComment() {
+
+        const input = document.getElementById('commentInput');
+        const list = document.getElementById('commentsList');
+
+        if (input.value.trim() !== "") {
+
+            const newComment = document.createElement('div');
+
+            newComment.className = 'comment';
+
+            newComment.innerHTML =
+                `<strong>لاعب جديد</strong>${input.value}`;
+
+            list.appendChild(newComment);
+
+            input.value = "";
+        }
+    }
+</script>
+```
+
+</body>
+</html>

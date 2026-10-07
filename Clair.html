@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clair Obscur: Expedition 33 | التفاصيل | PS World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+```
+<header>
+    <div class="logo">PS World</div>
+    <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="all-games.html">المكتبة</a>
+            <a href="index.html#contact">تواصل</a>
+        </nav>
+</header>
+
+<div class="container">
+
+    <img src="C:\Users\abrar\OneDrive\الصور\Screenshots\لقطة شاشة 2026-10-03 212834.png"
+         class="game-banner"
+         alt="Clair Obscur: Expedition 33">
+
+    <div class="details-content">
+
+        <h1 class="game-details-title">Clair Obscur: Expedition 33</h1>
+
+        <div class="rating">
+            ★ ★ ★ ★ ★ <span>(4.83 / 5 بناءً على أكثر من 105 ألف تقييم)</span>
+        </div>
+
+        <div class="description-container">
+
+            <h2>نظرة عامة:</h2>
+
+            <p class="description">
+                في عالم خيالي مستوحى من فرنسا في حقبة الـBelle Époque، تستيقظ الرسامة مرة كل عام وترسم رقمًا على صخرة ضخمة، وكل من تجاوز ذلك العمر يختفي ويتحول إلى دخان. ومع اقتراب الرقم من 33، تنطلق فرقة Expedition 33 في مهمتها الأخيرة للقضاء على الرسامة وكسر دائرة الموت. انضم إلى غوستاف ومايل وبقية أعضاء البعثة في رحلة مليئة بالمخاطر، واستكشف عالمًا ساحرًا وواجه أعداءً مذهلين في نظام قتال يعتمد على الأدوار مع حركات وتفاعلات في الوقت الحقيقي مثل المراوغة والصد والهجمات المضادة.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="comments-section">
+
+        <h3>آراء ومراجعات اللاعبين</h3>
+
+        <div class="comment-input-box">
+
+            <input
+                type="text"
+                id="commentInput"
+                placeholder="شاركنا رأيك أو مراجعتك للعبة..."
+            >
+
+            <button onclick="addComment()">نشر</button>
+
+        </div>
+
+        <div class="comments-list" id="commentsList">
+
+            <div class="comment">
+                <strong>عبدالله خالد</strong>
+                عالم اللعبة والرسومات شيء خرافي، خصوصًا تصميم الشخصيات والبيئات.
+            </div>
+
+            <div class="comment">
+                <strong>نورة محمد</strong>
+                القصة والموسيقى رهيبة، ونظام القتال مختلف وممتع جدًا.
+            </div>
+
+            <div class="comment">
+                <strong>سلمان أحمد</strong>
+                من الألعاب اللي فعلًا تخليك تكمل عشان تعرف وش بيصير، وكل منطقة فيها تفاصيل جميلة.
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function addComment() {
+
+        const input = document.getElementById('commentInput');
+        const list = document.getElementById('commentsList');
+
+        if (input.value.trim() !== "") {
+
+            const newComment = document.createElement('div');
+
+            newComment.className = 'comment';
+
+            newComment.innerHTML =
+                `<strong>لاعب جديد</strong>${input.value}`;
+
+            list.appendChild(newComment);
+
+            input.value = "";
+        }
+    }
+</script>
+```
+
+</body>
+</html>

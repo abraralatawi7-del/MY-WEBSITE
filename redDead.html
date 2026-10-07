@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Dead Redemption 2 | التفاصيل | PS World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylee.css">
+    
+</head>
+<body>
+
+```
+<header>
+    <div class="logo">PS World</div>
+    <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="all-games.html">المكتبة</a>
+            <a href="index.html#contact">تواصل</a>
+        </nav>
+</header>
+
+<div class="container">
+    <img src="C:\Users\abrar\OneDrive\الصور\Screenshots\لقطة شاشة 2026-10-03 112357.png" class="game-banner" alt="Red Dead Redemption 2">
+    
+    <div class="details-content">
+        <h1 class="game-details-title">Red Dead Redemption II</h1>
+        
+        <div class="rating">
+            ★ ★ ★ ★ ★ <span>(4.67 / 5 بناءً على أكثر من 700 ألف تقييم)</span>
+        </div>
+
+        <div class="description-container">
+            <h2>نظرة عامة:</h2>
+            <p class="description">
+                انغمس في عالم الغرب الأمريكي في نهاية القرن التاسع عشر مع آرثر مورغان، أحد أفراد عصابة فان دير ليند. بعد عملية سطو فاشلة، تضطر العصابة إلى الهروب والبحث عن مكان جديد للبقاء على قيد الحياة. وبينما يواجهون القانون والعصابات والمخاطر في البرية، يبدأ آرثر في مواجهة التغيرات التي تحدث حوله والاختيارات التي ستحدد مستقبله. تقدم اللعبة عالمًا مفتوحًا واسعًا مليئًا بالمغامرات والاستكشاف والمهام والشخصيات المتنوعة.
+            </p>
+        </div>
+    </div>
+
+    <div class="comments-section">
+        <h3>آراء ومراجعات اللاعبين</h3>
+        
+        <div class="comment-input-box">
+            <input type="text" id="commentInput" placeholder="شاركنا رأيك أو مراجعتك للعبة...">
+            <button onclick="addComment()">نشر</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+            <div class="comment">
+                <strong>سلمان أحمد</strong>
+                عالم اللعبة ضخم والتفاصيل فيه مذهلة، وكل مرة ألعب أكتشف شيء جديد.
+            </div>
+
+            <div class="comment">
+                <strong>نواف خالد</strong>
+                قصة آرثر من أفضل القصص اللي مرت علي في الألعاب، والشخصيات مكتوبة بشكل رائع.
+            </div>
+
+            <div class="comment">
+                <strong>ريم محمد</strong>
+                اللعبة تعطيك حرية كبيرة في الاستكشاف، والجرافيكس والتفاصيل تخليك تعيش أجواء الغرب فعلًا.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function addComment() {
+        const input = document.getElementById('commentInput');
+        const list = document.getElementById('commentsList');
+
+        if(input.value.trim() !== "") {
+            const newComment = document.createElement('div');
+            newComment.className = 'comment';
+            newComment.innerHTML = `<strong>لاعب جديد</strong>${input.value}`;
+            list.appendChild(newComment);
+            input.value = "";
+        }
+    }
+</script>
+```
+
+</body>
+</html>

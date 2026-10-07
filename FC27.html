@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EA SPORTS FC 27 | التفاصيل | PS World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylee.css">
+    <style>
+    .game-banner {
+        width: 100%;
+        max-width: 900px;
+        height: 400px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto 30px;
+    }
+</style>
+</head>
+<body>
+
+```
+<header>
+    <div class="logo">PS World</div>
+    <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="all-games.html">المكتبة</a>
+            <a href="index.html#contact">تواصل</a>
+        </nav>
+</header>
+
+<div class="container">
+    <img src="C:\Users\abrar\Downloads\Kyllian-Mbappe-is-EA-FC-27s-Ultimate-Edition-Cover-Star-Full-Reveal-Trailer-Scheduled.webp" class="game-banner" alt="EA SPORTS FC 27">
+    
+    <div class="details-content">
+        <h1 class="game-details-title">EA SPORTS FC 27</h1>
+        
+        <div class="rating">
+            ★ ★ ★ ★ ★ <span>(3.83 / 5 بناءً على حوالي 13 ألف تقييم)</span>
+        </div>
+
+        <div class="description-container">
+            <h2>نظرة عامة:</h2>
+            <p class="description">
+                مرحبًا بك في عالم كرة القدم مع EA SPORTS FC 27. استمتع بتجربة لعب أكثر واقعية وتحكم أكبر في مختلف أوضاع اللعبة، مع أكثر من 21 ألف لاعب عبر أكثر من 800 نادٍ ومنتخب وطني، وأكثر من 130 ملعبًا و35 دوريًا. تقدم اللعبة أسلوب لعب أكثر سلاسة، وتحركات هجومية محسّنة، وركلات ركنية ديناميكية، ودفاعًا يدويًا مصممًا للعب التنافسي. كما تقدم The Grounds، وهي ساحة اجتماعية جديدة على PlayStation 5 تتيح للاعبين الاجتماع والتنافس واللعب مع الأصدقاء بطرق مختلفة.
+            </p>
+        </div>
+    </div>
+
+    <div class="comments-section">
+        <h3>آراء ومراجعات اللاعبين</h3>
+        
+        <div class="comment-input-box">
+            <input type="text" id="commentInput" placeholder="شاركنا رأيك أو مراجعتك للعبة...">
+            <button onclick="addComment()">نشر</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+
+            <div class="comment">
+                <strong>عبدالله محمد</strong>
+                التحكم في المباريات صار أفضل، وأجواء الملاعب والتفاصيل تعطي تجربة كرة قدم واقعية.
+            </div>
+
+            <div class="comment">
+                <strong>سلمان خالد</strong>
+                The Grounds فكرة حلوة خصوصًا للعب مع الأصدقاء، وأعجبني تنوع طرق اللعب.
+            </div>
+
+            <div class="comment">
+                <strong>نواف أحمد</strong>
+                عدد اللاعبين والفرق والدوريات كبير جدًا، وهذا يعطي خيارات كثيرة في اللعب.
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function addComment() {
+        const input = document.getElementById('commentInput');
+        const list = document.getElementById('commentsList');
+
+        if(input.value.trim() !== "") {
+            const newComment = document.createElement('div');
+            newComment.className = 'comment';
+            newComment.innerHTML = `<strong>لاعب جديد</strong>${input.value}`;
+            list.appendChild(newComment);
+            input.value = "";
+        }
+    }
+</script>
+```
+
+</body>
+</html>

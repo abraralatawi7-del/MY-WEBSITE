@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uncharted 4 | التفاصيل | PS World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">PS World</div>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="all-games.html">المكتبة</a>
+            <a href="index.html#contact">تواصل</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <img src="C:\Users\abrar\OneDrive\الصور\Screenshots\لقطة شاشة 2026-10-03 102051.png" class="game-banner" alt="Uncharted 4">
+        
+        <div class="details-content">
+            <h1 class="game-details-title">Uncharted 4: A Thief's End</h1>
+            
+            <div class="rating">
+                ★ ★ ★ ★ ★ <span>(4.9 / 5 بناءً على آلاف اللاعبين)</span>
+            </div>
+
+            <div class="description-container">
+                <h2>نظرة عامة:</h2>
+                <p class="description">
+                    اعتبرت واحدة من أعظم التحف الفنية في عالم الألعاب. يعود "نيثان دريك" المتقاعد إلى عالم اللصوص في مغامرة شخصية وملحمية. عندما يظهر شقيقه الذي ظن أنه مات، "سام"، طالباً مساعدته لإنقاذ حياته، لا يجد نيثان خياراً سوى العودة للبحث عن كنز القبطان "هنري أفيري" الأسطوري المفقود في ليبيرتاتيا. مغامرة سينمائية مذهلة لا تُنسى.
+                </p>
+            </div>
+        </div>
+
+        <div class="comments-section">
+            <h3>آراء ومراجعات اللاعبين</h3>
+            
+            <div class="comment-input-box">
+                <input type="text" id="commentInput" placeholder="شاركنا رأيك أو مراجعتك للعبة...">
+                <button onclick="addComment()">نشر</button>
+            </div>
+
+            <div class="comments-list" id="commentsList">
+                <div class="comment">
+                    <strong>عبدالرحمن خالد</strong>
+                    تجربة لا تُنسى. القصة، الجرافيكس، ونهاية السلسلة كانت مثالية جداً.
+                </div>
+                <div class="comment">
+                    <strong>نورة خالد</strong>
+                    أفضل لعبة مغامرات لعبتها في حياتي! التفاصيل في كل مكان مذهلة.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addComment() {
+            const input = document.getElementById('commentInput');
+            const list = document.getElementById('commentsList');
+            if(input.value.trim() !== "") {
+                const newComment = document.createElement('div');
+                newComment.className = 'comment';
+                newComment.innerHTML = `<strong>لاعب جديد</strong>${input.value}`;
+                list.appendChild(newComment);
+                input.value = "";
+            }
+        }
+    </script>
+
+</body>
+</html>
